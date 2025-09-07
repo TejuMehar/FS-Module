@@ -42,3 +42,7 @@ const fs = require('fs');
 // Copy a file
 // fs.copyFileSync('./contacts.txt','./backup-contacts.txt');
 // fs.unlinkSync('./backup-contacts.txt');
+
+//Status of a file
+ const status = fs.statSync('./contacts.txt');
+ console.log(status);
