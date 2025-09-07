@@ -1,5 +1,8 @@
 const fs = require('fs');
 
+
+//To Create File
+
 // Synchronous file write
 // fs.writeFileSync('./example.text', 'Hello world !');
 
@@ -13,3 +16,24 @@ const fs = require('fs');
 // });
 
 
+
+// To read File
+// Synchronous file read 
+ const result = fs.readFileSync('./contacts.txt', 'utf-8');
+  console.log(result);
+
+//   Asynchronous File read
+  fs.readFile('./contacts.txt', 'utf-8',(err,result)=>{
+    if(err){
+        console.log(err);
+    }else{
+        console.log(result);
+    }
+  })
+
+
+
+
+// //Append data to a file
+
+// fs.appendFileSync('./contacts.txt',` ${new Date() }Hey There!\n`);
