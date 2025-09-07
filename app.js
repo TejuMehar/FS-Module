@@ -34,6 +34,11 @@ const fs = require('fs');
 
 
 
-Append data to a file
+// Append data to a file
 
-fs.appendFileSync('./contacts.txt',` ${new Date() }Hey There!\n`);
+// fs.appendFileSync('./contacts.txt',` ${new Date() }Hey There!\n`);
+
+
+// Copy a file
+// fs.copyFileSync('./contacts.txt','./backup-contacts.txt');
+// fs.unlinkSync('./backup-contacts.txt');
